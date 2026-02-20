@@ -8,7 +8,7 @@ class AnimeController extends Controller
 {
     public function showAnimeProducts()
     {
-        $Anime = [
+        $products = [
             'Anime Figure',
             'Character Acrylic Stand',
             'Pins',
@@ -21,5 +21,7 @@ class AnimeController extends Controller
             'Anime Cards',
             'Posters'
         ];
+
+        return view('anime_products', compact('products'));
     }
 }
